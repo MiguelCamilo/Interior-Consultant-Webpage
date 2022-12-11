@@ -8,16 +8,33 @@
 		<link rel="stylesheet" href="../dist/output.css" />
 	</head>
 	<body class="bg-[#181719]">
-		<div>
-			<nav class="flex items-end">
-				<div class="ml-10 mt-10 px-2 py-1 border border-white">
-					<a href="#">
-						<span class="text-[#FFFFFF]">THIS INTERIOR</span>
-					</a>
-                    <div class="">
-                        <a href="" class="text-[#FFFFFF]">Home</a>
-                    </div>
-			</nav>
+		<div class="container mx-auto">
+			<!-- created a container and created space-between both contents
+				being the <a> and <nav> -->
+			<div class="container flex justify-between mt-10">
+				<a href="#">
+					<span class="mx-auto text-[#FFFFFF] border border-white p-2"
+						>THIS INTERIOR</span
+					>
+				</a>
+				<nav class="flex space-x-16">
+					<a href="#" class="text-white hover:underline underline-offset-8"
+						>Home</a
+					>
+					<a href="#" class="text-white hover:underline underline-offset-8"
+						>Collection</a
+					>
+					<a href="#" class="text-white hover:underline underline-offset-8"
+						>About</a
+					>
+					<a href="#" class="text-white hover:underline underline-offset-8"
+						>Contact</a
+					>
+				</nav>
+			</div>
+			<!-- <div class="container">
+				<h1 class="text-white">Modern Interior</h1>
+			</div> -->
 		</div>
 	</body>
 </html>
