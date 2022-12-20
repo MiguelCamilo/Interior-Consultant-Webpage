@@ -11,14 +11,14 @@
 		<header class="container mx-auto">
 			<!-- created a container and created space-between both contents
 			being the <a> and <nav> -->
-			<div class="flex justify-between mt-10">
-				<a href="#">
+			<div class="flex flex-col md:flex-shrink-0 justify-between md:mt-10 mr-20 md:mr-0">
+				<a href="#" class="mb-10 md:mb-0">
 					<span
 						class="mx-auto text-[#FFFFFF] border border-white p-2 font-serif"
 						>THIS INTERIOR</span
 					>
 				</a>
-				<nav class="flex justify-end space-x-16">
+				<nav class="flex justify-end space-x-2 md:space-x-16 mr-2 md:mr-0">
 					<a
 						href="#"
 						class="text-white hover:underline decoration-2 underline-offset-4 font-serif"
@@ -43,15 +43,15 @@
 			</div>
 		</header>
 		<div class="flex container mx-auto h-screen w-full">
-			<div class="mt-48">
+			<div class="mt-48 text-center md:text-left">
 				<div class="mb-20">
 					<img
 						src="/imgs/photo1.png"
 						alt=""
-						class="float-right h-3/5 w-3/5 ml-20"
+						class="float-none md:float-right h-3/4 w-3/4 ml-10 md:h-3/5 md:w-3/5 md:ml-20"
 					/>
 					<div
-						class="bg-[#181719] flex shadow-2xl h-40 w-96 float-right absolute bottom-0 right-0 mt-80 mr-96"
+						class="bg-[#181719] flex shadow-2xl h-40 w-96 absolute bottom-0 right-0 lg:-mb-16 -mb-10 mr-32 lg:visible invisible"
 					>
 						<img
 							src="/imgs/photo2.png"
@@ -72,33 +72,34 @@
 						</div>
 					</div>
 				</div>
-				<p class="text-white text-5xl font-extrabold font-mono">
+				<p class="text-white text-4xl font-extrabold font-mono">
 					Modern Interior
 				</p>
-				<p class="mt-10 w-96 text-left text-white text-lg font-serif">
+				<p class="mt-10 ml-1 md:ml-0 w-96 text-center md:text-left text-white text-lg font-serif">
 					A full-Service residential & commercial interior design and staging
 					company offering professional organizing & eco-services.
 				</p>
-				<p class="mt-10 flex">
+				<p class="mt-10">
 					<a
 						href="#"
-						class="hover:underline decoration-2 underline-offset-4 text-white font-serif"
+						id="link"
+						class="hover:underline decoration-2 underline-offset-4 text-white font-serif flex justify-center md:justify-start"
 						>Read more
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 ml-3 text-white mt-0.5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+							/>
+						</svg>
 					</a>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="w-6 h-6 ml-3 text-white"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-						/>
-					</svg>
 				</p>
 			</div>
 		</div>
