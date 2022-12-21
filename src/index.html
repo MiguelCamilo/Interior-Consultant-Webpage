@@ -7,51 +7,60 @@
 		<title>Interior Consultant</title>
 		<link rel="stylesheet" href="../dist/output.css" />
 	</head>
-	<body class="bg-[#181719]">
-		<header class="container mx-auto">
-			<!-- created a container and created space-between both contents
-			being the <a> and <nav> -->
-			<div class="flex flex-col md:flex-shrink-0 justify-between md:mt-10 mr-20 md:mr-0">
-				<a href="#" class="mb-10 md:mb-0">
-					<span
-						class="mx-auto text-[#FFFFFF] border border-white p-2 font-serif"
-						>THIS INTERIOR</span
+	<body id="body" class="bg-[#181719]">
+		<header class="">
+			<!-- navbar -->
+			<nav class="relative container mx-auto p-6">
+				<!-- flex container -->
+				<div class="flex items-center justify-between">
+					<!-- logo -->
+					<div id="logo" class="pt-2 p-2 text-white border border-white">
+						<h1>THIS INTERIOR</h1>
+					</div>
+
+					<!-- menu items -->
+					<div class="hidden md:flex space-x-6">
+						<a href="#" class="text-white">Home</a>
+						<a href="#" class="text-white">Collection</a>
+						<a href="#" class="text-white">About</a>
+						<a href="#" class="text-white">Contact</a>
+					</div>
+
+					<!-- hamburger icon -->
+					<button
+						id="menu_btn"
+						class="hamburger block md:hidden focus:outline-none"
 					>
-				</a>
-				<nav class="flex justify-end space-x-2 md:space-x-16 mr-2 md:mr-0">
-					<a
-						href="#"
-						class="text-white hover:underline decoration-2 underline-offset-4 font-serif"
-						>Home</a
-					>
-					<a
-						href="#"
-						class="text-white hover:underline decoration-2 underline-offset-4 font-serif"
-						>Collection</a
-					>
-					<a
-						href="#"
-						class="text-white hover:underline decoration-2 underline-offset-4 font-serif"
-						>About</a
-					>
-					<a
-						href="#"
-						class="text-white hover:underline decoration-2 underline-offset-4 font-serif"
-						>Contact</a
-					>
-				</nav>
+						<span class="hamburger_top"></span>
+						<span class="hamburger_middle"></span>
+						<span class="hamburger_bottom"></span>
+					</button>
+				</div>
+			</nav>
+
+			<!-- mobile menu -->
+			<div class="md:hidden">
+				<div
+					id="menu"
+					class="bg-[#181719] h-screen w-screen absolute hidden flex-col items-center self-end space-y-6 sm:w-full sm:self-center left-6 right-6 drop-shadow-md"
+				>
+					<a href="#" class="text-white">Home</a>
+					<a href="#" class="text-white">Collection</a>
+					<a href="#" class="text-white">About</a>
+					<a href="#" class="text-white">Contact</a>
+				</div>
 			</div>
 		</header>
-		<div class="flex container mx-auto h-screen w-full">
-			<div class="mt-48 text-center md:text-left">
+		<div id="hideBody" class="flex container mx-auto h-full w-full">
+			<div class="mt-10 text-center md:text-left">
 				<div class="mb-20">
 					<img
 						src="/imgs/photo1.png"
 						alt=""
-						class="float-none md:float-right h-3/4 w-3/4 ml-10 md:h-3/5 md:w-3/5 md:ml-20"
+						class="float-none md:float-right h-80 w-80 ml-10 md:h-3/5 md:w-3/5 md:ml-20"
 					/>
 					<div
-						class="bg-[#181719] flex shadow-2xl h-40 w-96 absolute bottom-0 right-0 lg:-mb-16 -mb-10 mr-32 lg:visible invisible"
+						class="bg-[#181719] flex shadow-2xl h-40 w-96 absolute bottom-0 right-0 mr-32 md:mb-20 lg:visible invisible"
 					>
 						<img
 							src="/imgs/photo2.png"
@@ -72,10 +81,12 @@
 						</div>
 					</div>
 				</div>
-				<p class="text-white text-4xl font-extrabold font-mono">
+				<p class="text-white text-4xl text-left font-extrabold font-mono">
 					Modern Interior
 				</p>
-				<p class="mt-10 ml-1 md:ml-0 w-96 text-center md:text-left text-white text-lg font-serif">
+				<p
+					class="mt-10 ml-1 md:ml-0 w-96 text-left md:text-left text-white text-lg font-serif"
+				>
 					A full-Service residential & commercial interior design and staging
 					company offering professional organizing & eco-services.
 				</p>
@@ -83,7 +94,7 @@
 					<a
 						href="#"
 						id="link"
-						class="hover:underline decoration-2 underline-offset-4 text-white font-serif flex justify-center md:justify-start"
+						class="hover:underline decoration-2 underline-offset-4 text-white font-serif flex justify-start"
 						>Read more
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -108,5 +119,6 @@
 				© 2022 THIS INTERIOR. All Rights Reserved
 			</footer>
 		</div>
+		<script src="/src/script.js"></script>
 	</body>
 </html>
