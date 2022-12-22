@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interior Consultant</title>
+		<link rel="stylesheet" href="../dist/output.css" />
+	</head>
+	<body id="body" class="bg-[#181719] h-screen overflow-auto">
+		<header>
+			<!-- navbar -->
+			<nav class="container mx-auto py-6 px-3">
+				<!-- flex container -->
+				<div class="flex items-center justify-between">
+					<!-- logo -->
+					<div id="logo" class="pt-2 p-2 text-white border border-white font-serif hover:bg-zinc-600">
+						<a href="./home.html">
+							<h1>THIS INTERIOR</h1>
+						</a>
+					</div>
+
+					<!-- menu items -->
+					<div class="hidden md:flex space-x-6 font-serif">
+						<a href="./home.html" class="text-white hover:underline hover:underline-offset-8">Home</a>
+						<a href="./collection.html" class="text-white hover:underline hover:underline-offset-8">Collection</a>
+						<a href="./about.html" class="text-white hover:underline hover:underline-offset-8">About</a>
+						<a href="./contact.html" class="text-white hover:underline hover:underline-offset-8">Contact</a>
+					</div>
+
+					<!-- hamburger icon -->
+					<button
+						id="menu_btn"
+						class="hamburger block md:hidden focus:outline-none"
+					>
+						<span class="hamburger_top"></span>
+						<span class="hamburger_middle"></span>
+						<span class="hamburger_bottom"></span>
+					</button>
+				</div>
+			</nav>
+
+			<!-- mobile menu -->
+			<div class="md:hidden">
+				<div
+					id="menu"
+					class="bg-[#181719] h-screen mx-auto absolute hidden flex-col content-center items-center self-end space-y-10 pt-48 sm:w-full sm:self-center left-6 right-6 font-serif"
+				>
+					<a href="./home.html" class="text-white hover:underline hover:underline-offset-8">Home</a>
+					<a href="./collection.html" class="text-white hover:underline hover:underline-offset-8">Collection</a>
+					<a href="./about.html" class="text-white hover:underline hover:underline-offset-8">About</a>
+					<a href="./contact.html" class="text-white hover:underline hover:underline-offset-8">Contact</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- body actually begins -->
+		<div id="hideBody" class="relative container h-auto mx-auto md:flex md:flex-row">
+			<!-- intro container -->
+			<div class="flex flex-col place-content-start p-2 md:mt-60">
+				<h1 class="text-white text-5xl tracking-wider font-serif">Modern Interior</h1>
+				<p class="text-white text-sm pt-8 pr-28 md:pr-0 font-mono md:w-[65%]">
+					A full-Service residential & commercial interior design and staging
+					company offering professional organizing & eco-services.
+				</p>
+				<a href="#">
+					<button class="text-white text-sm pt-5 flex flex-row font-mono hover:underline hover:underline-offset-8">
+						Read More
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="w-6 h-6 ml-3 text-white"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+							/>
+						</svg>
+					</button>
+				</a>
+			</div>
+
+			<!-- image container -->
+			<div class="px-2 mt-5 md:mt-0">
+				<img src="/imgs/photo1.png" alt="" class="md:h-fit md:mt-10"/>
+
+				<!-- photo 2 container -->
+				<!-- <div
+					class="bg-zinc-700 pl-3 pt-3 ml-10 mr-6 h-32 w-2/3 absolute -bottom-20 right-0"
+				>
+					<div class="flex flex-row">
+						<img src="/imgs/photo2.png" alt="" class="rounded-full h-10 w-10" />
+						<h5 class="text-white text-sm pl-2">Aliza Webber</h5>
+						<h6 class="text-zinc-400 text-xs">Interior designer</h6>
+						<h1 class="text-white ">Designed in 2020 by Aliza Webber</h1>
+					</div>
+				</div> 
+			-->
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer
+			class="h-20 flex items-end justify-center text-[#828282] text-xs mt-20 md:mt-16 font-mono"
+		>
+			© 2022 THIS INTERIOR. All Rights Reserved
+		</footer>
+		<script src="/src/script.js"></script>
+	</body>
+</html>
