@@ -2,4 +2,4 @@
 
 - Example practice for tailwind css responsiveness
 
-https://thisinteriorblog.netlify.app/contact.html
+https://thisinteriorblog.netlify.app
